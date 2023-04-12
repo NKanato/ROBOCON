@@ -1,0 +1,108 @@
+
+(rules PCB 2023_Kyorobo_Circuit
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 1000)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 825)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1000.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class class1
+    GND "Arm1_P" "Arm1_D" "Arm2_P" "Arm2_D" "Net-(Board1-Pad76)" "Net-(Board1-Pad75)" "Net-(Board1-Pad74)"
+    "Net-(Board1-Pad73)" "Cup_D" "Net-(Board1-Pad71)" "Net-(Board1-Pad70)" "Net-(Board1-Pad69)" "Net-(Board1-Pad68)" "M2_P" "Net-(Board1-Pad66)"
+    Servo "Net-(Board1-Pad64)" "Net-(Board1-Pad63)" "Net-(Board1-Pad62)" "Cup_P" "Net-(Board1-Pad58)" "Roll_P" "Net-(Board1-Pad56)"
+    "M2_D" "Net-(Board1-Pad52)" "Net-(Board1-Pad51)" "Net-(Board1-Pad50)" "Net-(Board1-Pad49)" "Net-(Board1-Pad48)" "Net-(Board1-Pad47)" "Net-(Board1-Pad46)"
+    "Net-(Board1-Pad45)" "M1_D" "M3_D" "M1_P" "M4_D" "M3_P" "M4_P" "Roll_D"
+    "Net-(Board1-Pad37)" "Net-(Board1-Pad36)" "UpDown_D" "Net-(Board1-Pad34)" "Net-(Board1-Pad33)" "Net-(Board1-Pad32)" "Net-(Board1-Pad31)" b1
+    "Net-(Board1-Pad29)" a1 "Net-(Board1-Pad27)" "Net-(Board1-Pad26)" Limit2 "Net-(Board1-Pad24)" Limit1 "Net-(Board1-Pad22)"
+    "UpDown_P" "Net-(Board1-Pad19)" 5vout "Net-(Board1-Pad17)" 3vout "Net-(Board1-Pad15)" "Net-(Board1-Pad14)" "Net-(Board1-Pad13)"
+    "Net-(Board1-Pad12)" "Net-(Board1-Pad11)" "Net-(Board1-Pad10)" "Net-(Board1-Pad9)" "Net-(Board1-Pad8)" "Net-(Board1-Pad7)" "Net-(Board1-Pad6)" "Net-(Board1-Pad5)"
+    "Net-(Board1-Pad4)" "Net-(Board1-Pad3)" "uart1_rx" "uart1_tx" +BATT "Net-(Encoder1-Pad4)" "Net-(U2-Pad22)" "Net-(U2-Pad21)"
+    "Net-(U2-Pad20)" "Net-(U2-Pad19)" "Net-(U2-Pad18)" "Net-(U2-Pad17)" "Net-(U2-Pad16)" "Net-(U2-Pad15)" "Net-(U2-Pad14)" "Net-(U2-Pad13)"
+    "Net-(U2-Pad12)" "Net-(U2-Pad11)" "Net-(U2-Pad10)" "Net-(U2-Pad9)" "Net-(U2-Pad8)" "Net-(U2-Pad7)" "Net-(U2-Pad6)" "Net-(U2-Pad5)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 800.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class class2
+    +6V
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 2000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

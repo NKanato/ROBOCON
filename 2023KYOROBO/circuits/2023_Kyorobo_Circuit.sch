@@ -1,0 +1,725 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 8400 4700 2    50   Input ~ 0
+a1
+Text GLabel 8400 4800 2    50   Input ~ 0
+b1
+Wire Wire Line
+	8750 4300 8750 4400
+$Comp
+L power:GND #PWR0101
+U 1 1 63EB0E22
+P 8750 4400
+F 0 "#PWR0101" H 8750 4150 50  0001 C CNN
+F 1 "GND" H 8755 4227 50  0000 C CNN
+F 2 "" H 8750 4400 50  0001 C CNN
+F 3 "" H 8750 4400 50  0001 C CNN
+	1    8750 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4300 8750 4300
+Text GLabel 8400 4200 2    50   Input ~ 0
+5vout
+Text GLabel 8400 5200 2    50   Input ~ 0
+Roll_D
+Text GLabel 9600 4300 0    50   Input ~ 0
+Roll_P
+Text GLabel 7600 5100 0    50   Input ~ 0
+UpDown_D
+Text GLabel 7600 4400 0    50   Input ~ 0
+UpDown_P
+Text GLabel 10400 3600 2    50   Input ~ 0
+M1_D
+Text GLabel 10400 3500 2    50   Input ~ 0
+M1_P
+Text GLabel 10400 4100 2    50   Input ~ 0
+M2_D
+Text GLabel 9600 4800 0    50   Input ~ 0
+M2_P
+Text GLabel 9600 3600 0    50   Input ~ 0
+M3_D
+Text GLabel 10400 3400 2    50   Input ~ 0
+M3_P
+Text GLabel 9600 3500 0    50   Input ~ 0
+M4_D
+Text GLabel 9600 3400 0    50   Input ~ 0
+M4_P
+$Comp
+L Connector:Conn_01x03_Male M1
+U 1 1 63ECF2FC
+P 5200 4050
+F 0 "M1" H 5308 4331 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5308 4240 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 5200 4050 50  0001 C CNN
+F 3 "~" H 5200 4050 50  0001 C CNN
+	1    5200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male M2
+U 1 1 63ED1747
+P 5200 4650
+F 0 "M2" H 5308 4931 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5308 4840 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 5200 4650 50  0001 C CNN
+F 3 "~" H 5200 4650 50  0001 C CNN
+	1    5200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male M3
+U 1 1 63ED1AFA
+P 5200 5250
+F 0 "M3" H 5308 5531 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5308 5440 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 5200 5250 50  0001 C CNN
+F 3 "~" H 5200 5250 50  0001 C CNN
+	1    5200 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male M4
+U 1 1 63ED1F94
+P 5200 5900
+F 0 "M4" H 5308 6181 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5308 6090 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 5200 5900 50  0001 C CNN
+F 3 "~" H 5200 5900 50  0001 C CNN
+	1    5200 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male Roll1
+U 1 1 63ED345F
+P 4150 4050
+F 0 "Roll1" H 4258 4331 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4258 4240 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 4150 4050 50  0001 C CNN
+F 3 "~" H 4150 4050 50  0001 C CNN
+	1    4150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male UpDown1
+U 1 1 63ED37FD
+P 4150 4650
+F 0 "UpDown1" H 4258 4931 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4258 4840 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 4150 4650 50  0001 C CNN
+F 3 "~" H 4150 4650 50  0001 C CNN
+	1    4150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male Cup1
+U 1 1 63ED4DFD
+P 4150 5250
+F 0 "Cup1" H 4258 5531 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4258 5440 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 4150 5250 50  0001 C CNN
+F 3 "~" H 4150 5250 50  0001 C CNN
+	1    4150 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male Arm1
+U 1 1 63ED569C
+P 3150 4000
+F 0 "Arm1" H 3258 4281 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3258 4190 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 3150 4000 50  0001 C CNN
+F 3 "~" H 3150 4000 50  0001 C CNN
+	1    3150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male Arm2
+U 1 1 63ED5DD8
+P 3150 4600
+F 0 "Arm2" H 3258 4881 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3258 4790 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 3150 4600 50  0001 C CNN
+F 3 "~" H 3150 4600 50  0001 C CNN
+	1    3150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4150 5500 4200
+$Comp
+L power:GND #PWR0103
+U 1 1 63ED63E2
+P 5500 4200
+F 0 "#PWR0103" H 5500 3950 50  0001 C CNN
+F 1 "GND" H 5505 4027 50  0000 C CNN
+F 2 "" H 5500 4200 50  0001 C CNN
+F 3 "" H 5500 4200 50  0001 C CNN
+	1    5500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4150 5400 4150
+Wire Wire Line
+	5500 4750 5500 4800
+$Comp
+L power:GND #PWR0104
+U 1 1 63ED6C99
+P 5500 4800
+F 0 "#PWR0104" H 5500 4550 50  0001 C CNN
+F 1 "GND" H 5505 4627 50  0000 C CNN
+F 2 "" H 5500 4800 50  0001 C CNN
+F 3 "" H 5500 4800 50  0001 C CNN
+	1    5500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4750 5400 4750
+Wire Wire Line
+	5500 5350 5500 5400
+$Comp
+L power:GND #PWR0105
+U 1 1 63ED6E91
+P 5500 5400
+F 0 "#PWR0105" H 5500 5150 50  0001 C CNN
+F 1 "GND" H 5505 5227 50  0000 C CNN
+F 2 "" H 5500 5400 50  0001 C CNN
+F 3 "" H 5500 5400 50  0001 C CNN
+	1    5500 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5350 5400 5350
+Wire Wire Line
+	5500 6000 5500 6050
+$Comp
+L power:GND #PWR0106
+U 1 1 63ED7190
+P 5500 6050
+F 0 "#PWR0106" H 5500 5800 50  0001 C CNN
+F 1 "GND" H 5505 5877 50  0000 C CNN
+F 2 "" H 5500 6050 50  0001 C CNN
+F 3 "" H 5500 6050 50  0001 C CNN
+	1    5500 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6000 5400 6000
+Wire Wire Line
+	4450 4150 4450 4200
+$Comp
+L power:GND #PWR0107
+U 1 1 63ED73D4
+P 4450 4200
+F 0 "#PWR0107" H 4450 3950 50  0001 C CNN
+F 1 "GND" H 4455 4027 50  0000 C CNN
+F 2 "" H 4450 4200 50  0001 C CNN
+F 3 "" H 4450 4200 50  0001 C CNN
+	1    4450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4150 4350 4150
+Wire Wire Line
+	4450 4750 4450 4800
+$Comp
+L power:GND #PWR0108
+U 1 1 63ED7A28
+P 4450 4800
+F 0 "#PWR0108" H 4450 4550 50  0001 C CNN
+F 1 "GND" H 4455 4627 50  0000 C CNN
+F 2 "" H 4450 4800 50  0001 C CNN
+F 3 "" H 4450 4800 50  0001 C CNN
+	1    4450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4750 4350 4750
+Wire Wire Line
+	4450 5350 4450 5400
+$Comp
+L power:GND #PWR0109
+U 1 1 63ED7D3C
+P 4450 5400
+F 0 "#PWR0109" H 4450 5150 50  0001 C CNN
+F 1 "GND" H 4455 5227 50  0000 C CNN
+F 2 "" H 4450 5400 50  0001 C CNN
+F 3 "" H 4450 5400 50  0001 C CNN
+	1    4450 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5350 4350 5350
+Wire Wire Line
+	3450 4100 3450 4150
+$Comp
+L power:GND #PWR0110
+U 1 1 63ED804A
+P 3450 4150
+F 0 "#PWR0110" H 3450 3900 50  0001 C CNN
+F 1 "GND" H 3455 3977 50  0000 C CNN
+F 2 "" H 3450 4150 50  0001 C CNN
+F 3 "" H 3450 4150 50  0001 C CNN
+	1    3450 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4100 3350 4100
+Wire Wire Line
+	3450 4700 3450 4750
+$Comp
+L power:GND #PWR0111
+U 1 1 63ED890B
+P 3450 4750
+F 0 "#PWR0111" H 3450 4500 50  0001 C CNN
+F 1 "GND" H 3455 4577 50  0000 C CNN
+F 2 "" H 3450 4750 50  0001 C CNN
+F 3 "" H 3450 4750 50  0001 C CNN
+	1    3450 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4700 3350 4700
+$Comp
+L Connector:Conn_01x05_Male Encoder1
+U 1 1 63ED8D9E
+P 4450 2400
+F 0 "Encoder1" H 4558 2781 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 4558 2690 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal" H 4450 2400 50  0001 C CNN
+F 3 "~" H 4450 2400 50  0001 C CNN
+	1    4450 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4650 2200 2    50   Input ~ 0
+b1
+Text GLabel 4650 2400 2    50   Input ~ 0
+a1
+Text GLabel 4650 2300 2    50   Input ~ 0
+5vout
+Wire Wire Line
+	4750 2600 4750 2650
+$Comp
+L power:GND #PWR0112
+U 1 1 63EDA2E7
+P 4750 2650
+F 0 "#PWR0112" H 4750 2400 50  0001 C CNN
+F 1 "GND" H 4755 2477 50  0000 C CNN
+F 2 "" H 4750 2650 50  0001 C CNN
+F 3 "" H 4750 2650 50  0001 C CNN
+	1    4750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2600 4650 2600
+Text GLabel 5400 3950 2    50   Input ~ 0
+M1_D
+Text GLabel 5400 4050 2    50   Input ~ 0
+M1_P
+Text GLabel 5400 4550 2    50   Input ~ 0
+M2_D
+Text GLabel 5400 4650 2    50   Input ~ 0
+M2_P
+Text GLabel 5400 5150 2    50   Input ~ 0
+M3_D
+Text GLabel 5400 5250 2    50   Input ~ 0
+M3_P
+Text GLabel 5400 5800 2    50   Input ~ 0
+M4_D
+Text GLabel 5400 5900 2    50   Input ~ 0
+M4_P
+Text GLabel 4350 4550 2    50   Input ~ 0
+UpDown_D
+Text GLabel 4350 4650 2    50   Input ~ 0
+UpDown_P
+Text GLabel 4350 3950 2    50   Input ~ 0
+Roll_D
+Text GLabel 4350 4050 2    50   Input ~ 0
+Roll_P
+Text GLabel 10400 4400 2    50   Input ~ 0
+Cup_P
+Text GLabel 4350 5250 2    50   Input ~ 0
+Cup_P
+Text GLabel 4350 5150 2    50   Input ~ 0
+Cup_D
+$Comp
+L Connector:Conn_01x02_Male Limit1
+U 1 1 63EDE0D5
+P 5500 2250
+F 0 "Limit1" H 5608 2431 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 5608 2340 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal" H 5500 2250 50  0001 C CNN
+F 3 "~" H 5500 2250 50  0001 C CNN
+	1    5500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male Limit2
+U 1 1 63EDEC13
+P 5500 2750
+F 0 "Limit2" H 5608 2931 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 5608 2840 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A-1_1x02_P2.50mm_Horizontal" H 5500 2750 50  0001 C CNN
+F 3 "~" H 5500 2750 50  0001 C CNN
+	1    5500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2350 5800 2400
+$Comp
+L power:GND #PWR0113
+U 1 1 63EDFD1A
+P 5800 2400
+F 0 "#PWR0113" H 5800 2150 50  0001 C CNN
+F 1 "GND" H 5805 2227 50  0000 C CNN
+F 2 "" H 5800 2400 50  0001 C CNN
+F 3 "" H 5800 2400 50  0001 C CNN
+	1    5800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2350 5700 2350
+Wire Wire Line
+	5800 2850 5800 2900
+$Comp
+L power:GND #PWR0114
+U 1 1 63EE021B
+P 5800 2900
+F 0 "#PWR0114" H 5800 2650 50  0001 C CNN
+F 1 "GND" H 5805 2727 50  0000 C CNN
+F 2 "" H 5800 2900 50  0001 C CNN
+F 3 "" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2850 5700 2850
+Text GLabel 7600 4500 0    50   Input ~ 0
+Limit1
+Text GLabel 7600 4600 0    50   Input ~ 0
+Limit2
+Text GLabel 5700 2250 2    50   Input ~ 0
+Limit1
+Text GLabel 5700 2750 2    50   Input ~ 0
+Limit2
+$Comp
+L Connector:Conn_01x03_Male servo1
+U 1 1 63F0D6EC
+P 3150 5350
+F 0 "servo1" H 3258 5631 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3258 5540 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_S3B-XH-A-1_1x03_P2.50mm_Horizontal" H 3150 5350 50  0001 C CNN
+F 3 "~" H 3150 5350 50  0001 C CNN
+	1    3150 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5250 3700 5250
+Wire Wire Line
+	3450 5450 3450 5500
+$Comp
+L power:GND #PWR0116
+U 1 1 63F1248C
+P 3450 5500
+F 0 "#PWR0116" H 3450 5250 50  0001 C CNN
+F 1 "GND" H 3455 5327 50  0000 C CNN
+F 2 "" H 3450 5500 50  0001 C CNN
+F 3 "" H 3450 5500 50  0001 C CNN
+	1    3450 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5450 3350 5450
+Text GLabel 9600 4100 0    50   Input ~ 0
+Arm1_D
+Text GLabel 9600 4200 0    50   Input ~ 0
+Arm1_P
+Text GLabel 9600 4500 0    50   Input ~ 0
+Arm2_P
+Text GLabel 9600 4700 0    50   Input ~ 0
+Servo
+Text GLabel 3350 5350 2    50   Input ~ 0
+Servo
+Text GLabel 3350 4600 2    50   Input ~ 0
+Arm2_P
+Text GLabel 3350 4000 2    50   Input ~ 0
+Arm1_P
+Text GLabel 3350 3900 2    50   Input ~ 0
+Arm1_D
+Text GLabel 3350 4500 2    50   Input ~ 0
+Arm2_D
+Text GLabel 9600 4400 0    50   Input ~ 0
+Arm2_D
+NoConn ~ 10400 5200
+NoConn ~ 10400 5100
+NoConn ~ 10400 4900
+NoConn ~ 10400 4800
+NoConn ~ 10400 4700
+NoConn ~ 10400 4600
+NoConn ~ 10400 4500
+NoConn ~ 10400 4300
+NoConn ~ 10400 4200
+NoConn ~ 10400 3900
+NoConn ~ 10400 3800
+NoConn ~ 10400 3700
+NoConn ~ 9600 3700
+NoConn ~ 9600 3800
+NoConn ~ 9600 4000
+NoConn ~ 9600 4600
+NoConn ~ 9600 5000
+NoConn ~ 8400 5000
+NoConn ~ 8400 4600
+NoConn ~ 8400 4500
+NoConn ~ 8400 4400
+NoConn ~ 8400 4000
+NoConn ~ 8400 3900
+NoConn ~ 8400 3800
+NoConn ~ 8400 3700
+NoConn ~ 8400 3600
+NoConn ~ 7600 3500
+NoConn ~ 7600 3600
+NoConn ~ 7600 3700
+NoConn ~ 7600 3800
+NoConn ~ 7600 3900
+NoConn ~ 7600 4200
+NoConn ~ 7600 4300
+NoConn ~ 7600 4700
+NoConn ~ 7600 5000
+NoConn ~ 4650 2500
+$Comp
+L 2023_Kyorobo_Circuit-rescue:Nucleo_f446RE-nucleo_f446re Board1
+U 1 1 63EA4EBE
+P 9000 2500
+F 0 "Board1" H 9000 2615 50  0000 C CNN
+F 1 "Nucleo_f446RE" H 9000 2524 50  0000 C CNN
+F 2 "NUCLEO:Nucleof446re" H 9000 2500 50  0001 C CNN
+F 3 "" H 9000 2500 50  0001 C CNN
+	1    9000 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 10400 5000 2    50   Input ~ 0
+Cup_D
+NoConn ~ 8400 4900
+NoConn ~ 7600 5200
+NoConn ~ 8400 5100
+NoConn ~ 8400 3500
+NoConn ~ 10400 4000
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 63F20211
+P 2650 2300
+F 0 "J1" H 2758 2481 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 2758 2390 50  0000 C CNN
+F 2 "Connector_T:Connector_T_Male" H 2650 2300 50  0001 C CNN
+F 3 "~" H 2650 2300 50  0001 C CNN
+	1    2650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 63F221FC
+P 3400 2300
+F 0 "J2" H 3428 2276 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 3428 2185 50  0000 L CNN
+F 2 "Connector_T:Connector_T_Female" H 3400 2300 50  0001 C CNN
+F 3 "~" H 3400 2300 50  0001 C CNN
+	1    3400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR01
+U 1 1 63F23AE3
+P 3050 2250
+F 0 "#PWR01" H 3050 2100 50  0001 C CNN
+F 1 "+BATT" H 3065 2423 50  0000 C CNN
+F 2 "" H 3050 2250 50  0001 C CNN
+F 3 "" H 3050 2250 50  0001 C CNN
+	1    3050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 63F246AF
+P 3050 2450
+F 0 "#PWR02" H 3050 2200 50  0001 C CNN
+F 1 "GND" H 3055 2277 50  0000 C CNN
+F 2 "" H 3050 2450 50  0001 C CNN
+F 3 "" H 3050 2450 50  0001 C CNN
+	1    3050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2300 3050 2300
+Wire Wire Line
+	2850 2400 3050 2400
+Wire Wire Line
+	3050 2250 3050 2300
+Connection ~ 3050 2300
+Wire Wire Line
+	3050 2300 3200 2300
+Wire Wire Line
+	3050 2450 3050 2400
+Connection ~ 3050 2400
+Wire Wire Line
+	3050 2400 3200 2400
+$Comp
+L Regulator_Linear:L7806 U1
+U 1 1 63F1A4FC
+P 2450 3000
+F 0 "U1" H 2450 3242 50  0000 C CNN
+F 1 "L7806" H 2450 3151 50  0000 C CNN
+F 2 "Regulator:NJM7805FA" H 2475 2850 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 2450 2950 50  0001 C CNN
+	1    2450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 63F1C2D2
+P 1950 3150
+F 0 "C1" H 2068 3196 50  0000 L CNN
+F 1 "CP" H 2068 3105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 1988 3000 50  0001 C CNN
+F 3 "~" H 1950 3150 50  0001 C CNN
+	1    1950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 63F1CECC
+P 2950 3150
+F 0 "C2" H 3065 3196 50  0000 L CNN
+F 1 "C" H 3065 3105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 2988 3000 50  0001 C CNN
+F 3 "~" H 2950 3150 50  0001 C CNN
+	1    2950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+6V #PWR05
+U 1 1 63F1E444
+P 3100 3000
+F 0 "#PWR05" H 3100 2850 50  0001 C CNN
+F 1 "+6V" H 3115 3173 50  0000 C CNN
+F 2 "" H 3100 3000 50  0001 C CNN
+F 3 "" H 3100 3000 50  0001 C CNN
+	1    3100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR03
+U 1 1 63F1EC41
+P 1800 3000
+F 0 "#PWR03" H 1800 2850 50  0001 C CNN
+F 1 "+BATT" H 1815 3173 50  0000 C CNN
+F 2 "" H 1800 3000 50  0001 C CNN
+F 3 "" H 1800 3000 50  0001 C CNN
+	1    1800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3000 1950 3000
+Wire Wire Line
+	1950 3000 2150 3000
+Connection ~ 1950 3000
+Wire Wire Line
+	2750 3000 2950 3000
+Wire Wire Line
+	3100 3000 2950 3000
+Connection ~ 2950 3000
+Wire Wire Line
+	1950 3300 2450 3300
+Wire Wire Line
+	2950 3300 2450 3300
+Connection ~ 2450 3300
+$Comp
+L power:GND #PWR04
+U 1 1 63F233A3
+P 2450 3400
+F 0 "#PWR04" H 2450 3150 50  0001 C CNN
+F 1 "GND" H 2455 3227 50  0000 C CNN
+F 2 "" H 2450 3400 50  0001 C CNN
+F 3 "" H 2450 3400 50  0001 C CNN
+	1    2450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3400 2450 3300
+$Comp
+L power:+6V #PWR06
+U 1 1 63F252C5
+P 3700 5250
+F 0 "#PWR06" H 3700 5100 50  0001 C CNN
+F 1 "+6V" H 3715 5423 50  0000 C CNN
+F 2 "" H 3700 5250 50  0001 C CNN
+F 3 "" H 3700 5250 50  0001 C CNN
+	1    3700 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 3400 0    50   Input ~ 0
+uart1_tx
+Text GLabel 8400 3400 2    50   Input ~ 0
+uart1_rx
+NoConn ~ 2200 4200
+NoConn ~ 2200 4300
+NoConn ~ 2200 4400
+NoConn ~ 2200 4500
+NoConn ~ 2200 4600
+NoConn ~ 2200 4700
+NoConn ~ 2200 4800
+NoConn ~ 2200 4900
+NoConn ~ 2200 5000
+NoConn ~ 2200 5100
+NoConn ~ 2200 5200
+NoConn ~ 1300 5200
+NoConn ~ 1300 5100
+NoConn ~ 1300 5000
+NoConn ~ 1300 4900
+NoConn ~ 1300 4800
+NoConn ~ 1300 4700
+NoConn ~ 1300 4600
+Text GLabel 1300 4500 0    50   Input ~ 0
+uart1_tx
+Text GLabel 1300 4400 0    50   Input ~ 0
+uart1_rx
+$Comp
+L power:GND #PWR07
+U 1 1 63F20CDD
+P 900 4200
+F 0 "#PWR07" H 900 3950 50  0001 C CNN
+F 1 "GND" H 905 4027 50  0000 C CNN
+F 2 "" H 900 4200 50  0001 C CNN
+F 3 "" H 900 4200 50  0001 C CNN
+	1    900  4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4200 1300 4200
+$Comp
+L Xbee:xbeepros1 U2
+U 1 1 63F1D6D6
+P 1300 4150
+F 0 "U2" H 1750 4365 50  0000 C CNN
+F 1 "xbeepros1" H 1750 4274 50  0000 C CNN
+F 2 "xbee:xbee_pro_s1" H 1300 4150 50  0001 C CNN
+F 3 "" H 1300 4150 50  0001 C CNN
+	1    1300 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1300 4300 0    50   Input ~ 0
+3vout
+Text GLabel 8400 4100 2    50   Input ~ 0
+3vout
+$EndSCHEMATC
