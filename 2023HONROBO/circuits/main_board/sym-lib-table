@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "main_board-rescue")(type "KiCad")(uri "${KIPRJMOD}/main_board-rescue.kicad_sym")(options "")(descr ""))
+)

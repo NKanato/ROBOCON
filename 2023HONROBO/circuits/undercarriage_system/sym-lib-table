@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "undercarriage_system-rescue")(type "KiCad")(uri "${KIPRJMOD}/undercarriage_system-rescue.kicad_sym")(options "")(descr ""))
+)
